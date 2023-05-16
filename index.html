@@ -16,110 +16,430 @@
       </div>
     </header>
     <main>
+      <!-- container başlangıç-->
       <div class="container">
+        <!-- card başlangıç-->
         <div class="card">
+          <!-- card item başlangıç-->
           <div class="card-item">
-            <img class="image"
+            <img
+              id="food-image"
+              class="image"
               src="https://images.pexels.com/photos/5644943/pexels-photo-5644943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               alt=""
             />
+            <h2 id="food-title">Brokoli Çorbası</h2>
             <div class="button">
-              <button><i class="icon fa-solid fa-angles-down"></i></button>
+              <button id="button-recipe" onclick="getRecipe">
+                <i class="button-icon fa-solid fa-angles-down"></i>
+              </button>
             </div>
           </div>
-
-          <div class="card-item">
-            <img class="image"
-              src="https://images.pexels.com/photos/4439740/pexels-photo-4439740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-            <div class="button">
-              <button><i class="icon fa-solid fa-angles-down"></i></button>
+          <!-- card item bitiş-->
+          <!-- card recipe başlangıç-->
+          <div id="card-recipe" class="hide">
+            <div class="recipe-icon">
+              <div class="recipe-serving-icon">
+                <i class="fa-solid fa-utensils"></i>
+                <h5 id="serving">4 Kişilik</h5>
+              </div>
+              <div class="recipe-time-icon">
+                <i class="fa-regular fa-clock"></i>
+                <h5 id="time">
+                  Pişme Süresi <br />
+                  30dk
+                </h5>
+              </div>
+            </div>
+            <div class="recipe">
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi İçin Malzemeler</h3>
+              <ul id="ingredients">
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi Nasıl Yapılır?</h3>
+              <ol id="making">
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+              </ol>
             </div>
           </div>
-
-          <div class="card-item">
-            <img class="image"
-              src="https://images.pexels.com/photos/5644943/pexels-photo-5644943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-            <div class="button">
-              <button><i class="icon fa-solid fa-angles-down"></i></button>
-            </div>
-          </div>
-
-          <div class="card-item">
-            <img class="image"
-              src="https://images.pexels.com/photos/4439740/pexels-photo-4439740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-            <div class="button">
-              <button><i class="icon fa-solid fa-angles-down"></i></button>
-            </div>
-          </div>
-
-          <div class="card-item">
-            <img class="image"
-              src="https://images.pexels.com/photos/5644943/pexels-photo-5644943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-            <div class="button">
-              <button><i class="icon fa-solid fa-angles-down"></i></button>
-            </div>
-          </div>
-
-          <div class="card-item">
-            <img class="image"
-              src="https://images.pexels.com/photos/4439740/pexels-photo-4439740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-            <div class="button">
-              <button><i class="icon fa-solid fa-angles-down"></i></button>
-            </div>
-          </div>
-
-          <div class="card-item">
-            <img class="image"
-              src="https://images.pexels.com/photos/5644943/pexels-photo-5644943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-            <div class="button">
-              <button><i class="icon fa-solid fa-angles-down"></i></button>
-            </div>
-          </div>
-
-          <div class="card-item">
-            <img class="image"
-              src="https://images.pexels.com/photos/4439740/pexels-photo-4439740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-            <div class="button">
-              <button><i class="icon fa-solid fa-angles-down"></i></button>
-            </div>
-          </div>
-
-          <div class="card-item">
-            <img class="image"
-              src="https://images.pexels.com/photos/5644943/pexels-photo-5644943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-            <div class="button">
-              <button><i class="icon fa-solid fa-angles-down"></i></button>
-            </div>
-          </div>
-
-          <div class="card-item">
-            <img class="image"
-              src="https://images.pexels.com/photos/4439740/pexels-photo-4439740.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt=""
-            />
-            <div class="button">
-              <button><i class="icon fa-solid fa-angles-down"></i></button>
-            </div>
-          </div>
-
+          <!-- card recipe bitiş-->
         </div>
+        <!-- card bitiş-->
+
+
+
+
+
+
+
+
+        <!-- card başlangıç-->
+        <div class="card">
+          <!-- card item başlangıç-->
+          <div class="card-item">
+            <img
+              id="food-image"
+              class="image"
+              src="https://images.pexels.com/photos/5644943/pexels-photo-5644943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <h2 id="food-title">Brokoli Çorbası</h2>
+            <div class="button">
+              <button id="button-recipe" onclick="getRecipe">
+                <i class="button-icon fa-solid fa-angles-down"></i>
+              </button>
+            </div>
+          </div>
+          <!-- card item bitiş-->
+          <!-- card recipe başlangıç-->
+          <div id="card-recipe" class="hide">
+            <div class="recipe-icon">
+              <div class="recipe-serving-icon">
+                <i class="fa-solid fa-utensils"></i>
+                <h5 id="serving">4 Kişilik</h5>
+              </div>
+              <div class="recipe-time-icon">
+                <i class="fa-regular fa-clock"></i>
+                <h5 id="time">
+                  Pişme Süresi <br />
+                  30dk
+                </h5>
+              </div>
+            </div>
+            <div class="recipe">
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi İçin Malzemeler</h3>
+              <ul id="ingredients">
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi Nasıl Yapılır?</h3>
+              <ol id="making">
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- card recipe bitiş-->
+        </div>
+        <!-- card bitiş-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- card başlangıç-->
+        <div class="card">
+          <!-- card item başlangıç-->
+          <div class="card-item">
+            <img
+              id="food-image"
+              class="image"
+              src="https://images.pexels.com/photos/5644943/pexels-photo-5644943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <h2 id="food-title">Brokoli Çorbası</h2>
+            <div class="button">
+              <button id="button-recipe" onclick="getRecipe">
+                <i class="button-icon fa-solid fa-angles-down"></i>
+              </button>
+            </div>
+          </div>
+          <!-- card item bitiş-->
+          <!-- card recipe başlangıç-->
+          <div id="card-recipe" class="hide">
+            <div class="recipe-icon">
+              <div class="recipe-serving-icon">
+                <i class="fa-solid fa-utensils"></i>
+                <h5 id="serving">4 Kişilik</h5>
+              </div>
+              <div class="recipe-time-icon">
+                <i class="fa-regular fa-clock"></i>
+                <h5 id="time">
+                  Pişme Süresi <br />
+                  30dk
+                </h5>
+              </div>
+            </div>
+            <div class="recipe">
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi İçin Malzemeler</h3>
+              <ul id="ingredients">
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi Nasıl Yapılır?</h3>
+              <ol id="making">
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- card recipe bitiş-->
+        </div>
+        <!-- card bitiş-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- card başlangıç-->
+        <div class="card">
+          <!-- card item başlangıç-->
+          <div class="card-item">
+            <img
+              id="food-image"
+              class="image"
+              src="https://images.pexels.com/photos/5644943/pexels-photo-5644943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <h2 id="food-title">Brokoli Çorbası</h2>
+            <div class="button">
+              <button id="button-recipe" onclick="getRecipe">
+                <i class="button-icon fa-solid fa-angles-down"></i>
+              </button>
+            </div>
+          </div>
+          <!-- card item bitiş-->
+          <!-- card recipe başlangıç-->
+          <div id="card-recipe" class="hide">
+            <div class="recipe-icon">
+              <div class="recipe-serving-icon">
+                <i class="fa-solid fa-utensils"></i>
+                <h5 id="serving">4 Kişilik</h5>
+              </div>
+              <div class="recipe-time-icon">
+                <i class="fa-regular fa-clock"></i>
+                <h5 id="time">
+                  Pişme Süresi <br />
+                  30dk
+                </h5>
+              </div>
+            </div>
+            <div class="recipe">
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi İçin Malzemeler</h3>
+              <ul id="ingredients">
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi Nasıl Yapılır?</h3>
+              <ol id="making">
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- card recipe bitiş-->
+        </div>
+        <!-- card bitiş-->
+
+
+
+
+
+
+        <!-- card başlangıç-->
+        <div class="card">
+          <!-- card item başlangıç-->
+          <div class="card-item">
+            <img
+              id="food-image"
+              class="image"
+              src="https://images.pexels.com/photos/5644943/pexels-photo-5644943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <h2 id="food-title">Brokoli Çorbası</h2>
+            <div class="button">
+              <button id="button-recipe" onclick="getRecipe">
+                <i class="button-icon fa-solid fa-angles-down"></i>
+              </button>
+            </div>
+          </div>
+          <!-- card item bitiş-->
+          <!-- card recipe başlangıç-->
+          <div id="card-recipe" class="hide">
+            <div class="recipe-icon">
+              <div class="recipe-serving-icon">
+                <i class="fa-solid fa-utensils"></i>
+                <h5 id="serving">4 Kişilik</h5>
+              </div>
+              <div class="recipe-time-icon">
+                <i class="fa-regular fa-clock"></i>
+                <h5 id="time">
+                  Pişme Süresi <br />
+                  30dk
+                </h5>
+              </div>
+            </div>
+            <div class="recipe">
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi İçin Malzemeler</h3>
+              <ul id="ingredients">
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi Nasıl Yapılır?</h3>
+              <ol id="making">
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- card recipe bitiş-->
+        </div>
+        <!-- card bitiş-->
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- card başlangıç-->
+        <div class="card">
+          <!-- card item başlangıç-->
+          <div class="card-item">
+            <img
+              id="food-image"
+              class="image"
+              src="https://images.pexels.com/photos/5644943/pexels-photo-5644943.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <h2 id="food-title">Brokoli Çorbası</h2>
+            <div class="button">
+              <button id="button-recipe" onclick="getRecipe">
+                <i class="button-icon fa-solid fa-angles-down"></i>
+              </button>
+            </div>
+          </div>
+          <!-- card item bitiş-->
+          <!-- card recipe başlangıç-->
+          <div id="card-recipe" class="hide">
+            <div class="recipe-icon">
+              <div class="recipe-serving-icon">
+                <i class="fa-solid fa-utensils"></i>
+                <h5 id="serving">4 Kişilik</h5>
+              </div>
+              <div class="recipe-time-icon">
+                <i class="fa-regular fa-clock"></i>
+                <h5 id="time">
+                  Pişme Süresi <br />
+                  30dk
+                </h5>
+              </div>
+            </div>
+            <div class="recipe">
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi İçin Malzemeler</h3>
+              <ul id="ingredients">
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+              </ul>
+              <h3 id="recipe-title">Brokoli Çorbası Tarifi Nasıl Yapılır?</h3>
+              <ol id="making">
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+              </ol>
+            </div>
+          </div>
+          <!-- card recipe bitiş-->
+        </div>
+        <!-- card bitiş-->
       </div>
+      <!-- container bitiş-->
     </main>
+
+    <script src="app.js"></script>
   </body>
 </html>
