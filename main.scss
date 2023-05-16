@@ -81,7 +81,8 @@ main {
         align-items: center;
         justify-content: center;
         margin: 15px;
-        transition: transform 0.2s;
+        text-align: center;
+
         img {
           width: 100%;
           height: 70%;
@@ -108,7 +109,7 @@ main {
         }
       }
 
-      #card-recipe {
+      .card-recipe {
         display: flex;
         flex-direction: column;
         background-image: linear-gradient(135deg, #f08f72 10%, #d3042d 100%);
@@ -116,9 +117,9 @@ main {
         padding: 20px;
         border-radius: 20px;
         margin: 15px;
-        margin-top: -40px;
-
-       
+        // opacity: 0;
+        transition: all 2s ease-in;
+        margin-top: -20px !important;
 
         h3,
         h4,
@@ -161,6 +162,10 @@ main {
             }
           }
         }
+      }
+
+      .card-recipe.show {
+        opacity: 1;
       }
     }
   }
@@ -208,8 +213,3 @@ main {
     }
   }
 }
-
-
-.hide {
-  display: none !important;
- }

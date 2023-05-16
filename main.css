@@ -78,7 +78,7 @@ main .container .card .card-item {
   align-items: center;
   justify-content: center;
   margin: 15px;
-  transition: transform 0.2s;
+  text-align: center;
 }
 main .container .card .card-item img {
   width: 100%;
@@ -100,7 +100,7 @@ main .container .card .card-item #button-recipe {
 main .container .card .card-item #button-recipe .button-icon {
   font-size: 20px;
 }
-main .container .card #card-recipe {
+main .container .card .card-recipe {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(135deg, #f08f72 10%, #d3042d 100%);
@@ -108,39 +108,43 @@ main .container .card #card-recipe {
   padding: 20px;
   border-radius: 20px;
   margin: 15px;
-  margin-top: -40px;
+  transition: all 2s ease-in;
+  margin-top: -20px !important;
 }
-main .container .card #card-recipe h3,
-main .container .card #card-recipe h4,
-main .container .card #card-recipe h5 {
+main .container .card .card-recipe h3,
+main .container .card .card-recipe h4,
+main .container .card .card-recipe h5 {
   font-weight: 400 !important;
   margin-top: 10px;
 }
-main .container .card #card-recipe .recipe-icon {
+main .container .card .card-recipe .recipe-icon {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   text-align: center;
   margin: 10px;
 }
-main .container .card #card-recipe .recipe-icon i {
+main .container .card .card-recipe .recipe-icon i {
   font-size: 22px;
   color: #fff;
 }
-main .container .card #card-recipe .recipe {
+main .container .card .card-recipe .recipe {
   text-align: left;
 }
-main .container .card #card-recipe .recipe #ingredients li {
+main .container .card .card-recipe .recipe #ingredients li {
   list-style-type: circle;
   margin-left: 20px;
   font-weight: 300;
   margin-top: 5px;
 }
-main .container .card #card-recipe .recipe #making li {
+main .container .card .card-recipe .recipe #making li {
   list-style-type: decimal;
   margin-left: 20px;
   font-weight: 300;
   margin-top: 10px;
+}
+main .container .card .card-recipe.show {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1064px) {
@@ -172,7 +176,4 @@ main .container .card #card-recipe .recipe #making li {
   main .container #button-recipe {
     margin-bottom: 20px;
   }
-}
-.hide {
-  display: none !important;
 }/*# sourceMappingURL=main.css.map */
