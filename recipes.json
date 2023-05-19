@@ -6,7 +6,7 @@
     "serving": "4",
     "time": "30",
     "ingredients": "",
-    "making": ""
+    "making": ["su hazirla", "tepsiye koy", "kaynat"]
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "serving": "4",
     "time": "45",
     "ingredients": "",
-    "making": ""
+    "making": ["su hazirla", "tepsiye koy", "kaynat"]
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "serving": "2",
     "time": "30",
     "ingredients": "",
-    "making": ""
+    "making": ["su hazirla", "tepsiye koy", "kaynat"]
   },
   {
     "id": 5,
@@ -42,6 +42,6 @@
     "serving": "1",
     "time": "50",
     "ingredients": "",
-    "making": ""
+    "making": ["su hazirla", "tepsiye koy", "kaynat"]
   }
 ]

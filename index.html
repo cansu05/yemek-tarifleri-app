@@ -21,7 +21,7 @@
         <!-- card başlangıç-->
         <div class="card">
           <!-- card item başlangıç-->
-          <div class="card-item recipes__list">
+          <div class="card-item">
             <img class="image" src="" alt="" />
             <h2></h2>
 
@@ -33,11 +33,11 @@
           </div>
           <!-- card item bitiş-->
           <!-- card recipe başlangıç-->
-          <div class="card-recipe">
+          <div class="card-recipe recipes__list">
             <div class="recipe-icon">
               <div class="recipe-serving-icon">
                 <i class="fa-solid fa-utensils"></i>
-                <h5>Kişilik</h5>
+                <h5 id="serving">Kişilik</h5>
               </div>
               <div class="recipe-time-icon">
                 <i class="fa-regular fa-clock"></i>
@@ -48,28 +48,15 @@
               </div>
             </div>
             <div class="recipe">
-              <h3 id="recipe-title">Brokoli Çorbası Tarifi İçin Malzemeler</h3>
-              <!-- <ul id="ingredients">
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-                <li>Lorem, ipsum dolor.</li>
-              </ul> -->
-              <h3 id="recipe-title">Brokoli Çorbası Tarifi Nasıl Yapılır?</h3>
-              <!-- <ol id="making">
-                <li>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </li>
-                <li>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                </li>
-              </ol> -->
+              <h3 class="ingredients-title" id="recipe-title">
+                Tarifi İçin Malzemeler
+              </h3>
+              <ul id="ingredients"></ul>
+
+              <h3 class="making-title" id="recipe-title">
+                Tarifi Nasıl Yapılır?
+              </h3>
+              <ol id="making"></ol>
             </div>
           </div>
           <!-- card recipe bitiş-->

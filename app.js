@@ -10,78 +10,51 @@ buttonRecipe.addEventListener(
   })
 );
 
-const getRecipes = () => {
+const createRecipesCard = () => {
   fetch("./recipes.json")
-    .then((res) => res.json())
-    .then((recipes) => (recipesList = recipes));
-};
+    .then((response) => response.json())
+    .then((recipes) => {
+      // recipes.forEach((item) => {
 
-getRecipes();
+        const ingredientList = document.getElementById("ingredients");
 
-const createRecipesItemHtml = () => {
-  const recipesListElement = document.querySelector(".recipes__list");
-  let recipesListHtml = "";
-  recipesList.forEach((recipe) => {
-    recipesListHtml += `
-    
-    <div class="card-item recipes__list">
-      <img class="image" src="${recipe.img}" alt="" />
-      <h2>${recipe.foodName}</h2>
-          
-      <div class="button">
-        <button id="button-recipe" onclick="toggleRecipe">
-          <i class="button-icon fa-solid fa-angles-down"></i>
-        </button>
-      </div>
-    </div>
-    <!-- card recipe başlangıç-->
-    <div class="card-recipe">
-      <div class="recipe-icon">
-        <div class="recipe-serving-icon">
-          <i class="fa-solid fa-utensils"></i>
-          <h5>${recipe.serving} Kişilik</h5>
-        </div>
-        <div class="recipe-time-icon">
-          <i class="fa-regular fa-clock"></i>
-          <h5>
-            Pişme Süresi <br />
-            ${recipe.time}dk
-          </h5>
-        </div>
-      </div>
-      <div class="recipe">
-        <h3 id="recipe-title">${recipe.foodName}  Tarifi İçin Malzemeler</h3>
-        <ul id="ingredients">
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
-          <li>Lorem, ipsum dolor.</li>
-        </ul>
-        <h3 id="recipe-title">${recipe.foodName} Tarifi Nasıl Yapılır?</h3>
-        <ol id="making">
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </li>
-        </ol>
-      </div>
-    </div>
-    <!-- card recipe bitiş-->
+        recipes.forEach((item) => {
+          const ingredientListLi = `<li>${item.making}</li>`;
+          ingredientList.insertAdjacentHTML("beforeend", ingredientListLi);
+        });
 
-    `;
-  });
+        const makingList = document.getElementById("making");
 
-  recipesListElement.innerHTML = recipesListHtml;
-};
+        recipes.forEach((item) => {
+          const makingListLi = `<li>${item.making}</li>`;
+          makingList.insertAdjacentHTML("beforeend", makingListLi );
+        });
 
-setTimeout(() => {
-  createRecipesItemHtml();
-}, 100);
+        const ingredientTitle = document.querySelector(".ingredients-title");
+        
+        recipes.forEach((item) => {
+          const jsonMetin = item.foodName;
+          ingredientTitle.insertAdjacentText("afterbegin", jsonMetin);
+        });
+
+        recipes.forEach((item) => {
+          const jsonMetin = item.foodName;
+          ingredientTitle.insertAdjacentText("afterbegin", jsonMetin);
+        });
+      // })
+      
+    })
+    .catch((error) => {
+      console.error("JSON verisi alınamadı:", error);
+    });
+}; 
+
+
+
+
+
+
+createRecipesCard ()
+
+
+
